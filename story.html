@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The Tale - My Digital Storybook</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+.story-header {
+background-image: url('https://i.pinimg.com/736x/6f/68/2e/6f682e84a0e06cb68f5639535727e53d.jpg');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+color: #ecf0f1;
+padding: 6rem 2rem;
+text-align: center;
+border-radius: 10px;
+margin-bottom: 2rem;
+position: relative;
+}
+
+
+.story-header::before {
+content: "";
+position: absolute;
+top: 0; left: 0; right: 0; bottom: 0;
+background-color: rgba(0, 0, 0, 0.5);
+border-radius: 10px;
+}
+
+.story-header h1,
+.story-header p {
+position: relative; /* appear above overlay */
+z-index: 1;
+}
+
+.story-tabs {
+display: flex;
+justify-content: center;
+gap: 1rem;
+margin-bottom: 2rem;
+}
+
+input[type="radio"] {
+display: none;
+}
+
+.tab-label {
+background-color: transparent;
+border: 2px solid #161d0a;
+color: #161d0a;
+padding: 10px 20px;
+font-family: 'Cinzel', serif;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s ease;
+border-radius: 25px;
+}
+
+input[type="radio"]:checked + .tab-label {
+background-color: #161d0a;
+color: white;
+box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.story-content-section {
+display: none;
+background-color: #fff;
+padding: 3rem;
+border-radius: 15px;
+box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+line-height: 1.8;
+font-size: 1.1rem;
+min-height: 400px;
+}
+
+#tab-beginning:checked ~ #content-beginning,
+#tab-middle:checked ~ #content-middle,
+#tab-end:checked ~ #content-end {
+display: block;
+}
+
+.story-image {
+width: 300px;
+margin-bottom: 20px;
+border-radius: 10px;
+border: 5px solid #ecf0f1;
+box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+#content-beginning .story-image {
+float: right;
+margin-left: 20px;
+}
+
+#content-middle .story-image {
+float: left;
+margin-right: 20px;
+margin-left: 0;
+}
+
+#content-end .story-end-footer {
+text-align: center;
+margin-top: 30px;
+font-style: italic;
+color: #7f8c8d;
+}
+</style>
+</head>
+<body>
+<nav class="navbar">
+<a href="index.html" class="nav-brand">My Digital Storybook</a>
+<ul class="nav-links">
+<li><a href="index.html" class="nav-link">The Portal</a></li>
+<li><a href="story.html" class="nav-link">The Tale</a></li>
+<li><a href="about.html" class="nav-link">Behind the Legend</a></li>
+<li><a href="profile.html" class="nav-link">Meet the Author</a></li>
+</ul>
+</nav>
+
+<div class="page-container">
+<div class="story-header">
+<h1>The Legend of Maria Makiling</h1>
+<p>The Diwata Myth</p>
+</div>
+
+<input type="radio" id="tab-beginning" name="story-tabs" checked>
+<input type="radio" id="tab-middle" name="story-tabs">
+<input type="radio" id="tab-end" name="story-tabs">
+
+<div class="story-tabs">
+<label for="tab-beginning" class="tab-label">Beginning</label>
+<label for="tab-middle" class="tab-label">Middle</label>
+<label for="tab-end" class="tab-label">End</label>
+</div>
+
+
+<div id="content-beginning" class="story-content-section">
+<h2>The Guardian of the Mountain</h2>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Mariang_Makiling_statue_at_the_University_of_the_Philippines_in_Los_Ba%C3%B1os.jpg/250px-Mariang_Makiling_statue_at_the_University_of_the_Philippines_in_Los_Ba%C3%B1os.jpg" alt="Forest Setting" class="story-image">
+<p>
+Many years ago, in the province of Laguna, there lived a beautiful diwata named Maria Makiling. She was the guardian spirit of Mount Makiling, a dormant volcano that resembled the profile of a sleeping woman. Maria was known for her breathtaking beauty—her skin was as clear as amber, her hair as black as the night, and her eyes sparkled like the morning dew. She was kind and generous, often helping the townspeople by giving them fruits, ginger that turned into gold, and protection from storms.
+</p>
+<p>
+The people loved and revered her. Hunters would often find their traps filled with game, and woodcutters would find the finest timber, all thanks to Maria's blessings. She would sometimes appear to them as a simple village girl, walking barefoot along the forest paths, her laughter echoing like wind chimes through the trees.
+</p>
+<p>
+However, Maria's heart was not just bound to the mountain. She had a deep curiosity about the human world and often observed the young men who ventured into her domain. It was during one of these times that she laid eyes on a young farmer named Juan. He was hardworking, humble, and possessed a gentle spirit that captivated the diwata.
+</p>
+</div>
+
+<div id="content-middle" class="story-content-section">
+<h2>A Forbidden Love</h2>
+<img src="https://i.pinimg.com/736x/04/a7/51/04a751be494ba229936c444cfec29762.jpg" alt="Conflict" class="story-image">
+<p>
+Maria and Juan fell deeply in love. They would meet secretly in the forest, sharing stories and dreams. Maria, despite being an immortal spirit, felt a very human connection to Juan. She showered him with gifts and ensured his crops always flourished. For a while, their love seemed perfect, a bridge between the mortal and the divine.
+</p>
+<p>
+But the world of men is complicated. War broke out in the lands below, and the army came to recruit young men to fight. Juan, fearing for his safety and his future, decided to arrange a marriage with a village woman to avoid the draft, as married men were exempt. He did not tell Maria of his plan, fearing her reaction.
+</p>
+<p>
+Maria, with her divine intuition, sensed something was wrong. She waited for Juan at their usual meeting spot, but he never came. Days turned into weeks. Finally, she descended to the village in disguise and discovered the truth. She saw Juan preparing for his wedding, laughing and celebrating with his mortal bride-to-be.
+</p>
+<p>
+The betrayal cut deeper than any blade. The diwata's heart shattered. She realized that no matter how much she loved a mortal, their worlds were too different. The trust she had placed in humanity was broken.
+</p>
+</div>
+
+<div id="content-end" class="story-content-section">
+<h2>The Mountain's Silence</h2>
+<p>
+Heartbroken and angry, Maria Makiling returned to her mountain. The skies darkened, and a great storm swept across the land, reflecting her sorrow and rage. She vowed never to let a mortal see her again. The ginger she used to give turned back into ordinary roots, and the abundance of the forest dwindled.
+</p>
+<p>
+From that day on, Maria Makiling vanished from the sight of men. Some say she still watches over the mountain, but her presence is now distant and cold. Hunters who lose their way in the forest are said to be led astray by her spirit, a punishment for the betrayal she suffered.
+</p>
+<p>
+The legend serves as a reminder of the respect we must hold for nature and the consequences of breaking a promise. Mount Makiling stands tall to this day, a silent witness to the love and loss of its guardian. When the mountain is covered in mist, the elders say it is Maria, sighing in her eternal slumber, dreaming of a love that could never be.
+</p>
+<div class="story-end-footer">
+<p>— The End —</p>
+</div>
+</div>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,131 @@
+/* EXTERNAL CSS - Main Design */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@400;700&display=swap');
+
+:root {
+--primary-color: #161d0a;
+--accent-color: #313e1e;
+--text-color: #0C0F0C;
+--bg-color: #EDFFED;
+--nav-bg: #161d0a;
+--nav-text: #ffffff;
+}
+
+* {
+box-sizing: border-box;
+}
+
+body {
+font-family: 'Lato', sans-serif;
+background-color: var(--bg-color);
+color: var(--text-color);
+margin: 0;
+padding: 0;
+line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Cinzel', serif;
+color: var(--primary-color);
+margin-top: 0;
+}
+
+/* Navigation Bar Styling */
+.navbar {
+background-color: var(--nav-bg);
+padding: 1rem 2rem;
+position: sticky; /* CSS Requirement: position sticky */
+top: 0;
+z-index: 1000;
+box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* CSS Requirement: box-shadow */
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.nav-brand {
+font-family: 'Cinzel', serif;
+font-size: 1.5rem;
+color: var(--accent-color);
+text-decoration: none;
+font-weight: bold;
+text-shadow: 1px 1px 2px rgba(0,0,0,0.5); /* CSS Requirement: text-shadow */
+}
+
+.nav-links {
+display: flex;
+gap: 20px;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+.nav-link {
+color: var(--nav-text);
+text-decoration: none;
+font-weight: bold;
+transition: color 0.3s ease;
+padding: 5px 10px;
+border-radius: 5px; /* CSS Requirement: border-radius */
+}
+
+/* CSS Requirement: :hover effects */
+.nav-link:hover {
+color: var(--accent-color);
+background-color: rgba(255,255,255,0.1);
+}
+
+.page-container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 2rem;
+min-height: 80vh;
+}
+
+.btn-primary {
+background-color: var(--primary-color);
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 1rem;
+transition: transform 0.2s, background-color 0.2s;
+text-decoration: none;
+display: inline-block;
+}
+
+.btn-primary:hover {
+background-color: #34495e;
+transform: translateY(-2px);
+box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.card {
+background: white;
+padding: 2rem;
+border-radius: 10px;
+box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+margin-bottom: 2rem;
+}
+
+.img-fluid {
+max-width: 100%;
+height: auto;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.text-center {
+text-align: center;
+}
+
+.flex-center {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.gap-20 {
+gap: 20px;
+}
+

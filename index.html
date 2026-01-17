@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The Portal - My Digital Storybook</title>
+<link rel="stylesheet" href="style.css">
+<style>
+header {
+background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://i.pinimg.com/736x/6f/68/2e/6f682e84a0e06cb68f5639535727e53d.jpg');
+background-size: cover;
+background-position: center;
+height: 60vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+color: white;
+text-align: center;
+border-radius: 0 0 20px 20px;
+box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+header h1 {
+font-size: 3.5rem;
+margin-bottom: 1rem;
+text-shadow: 2px 2px 4px black;
+}
+
+header p {
+font-size: 1.5rem;
+max-width: 600px;
+}
+
+/* Page container and card */
+.page-container {
+padding: 40px 20px;
+}
+
+.card {
+background-color: #161d0a;
+border-radius: 20px;
+padding: 30px;
+max-width: 900px;
+margin: 0 auto;
+box-shadow: 0 0 15px rgba(0,0,0,0.3);
+color: white;
+text-align: center;
+}
+
+.card h2 {
+font-size: 2rem;
+margin-bottom: 20px;
+}
+
+.card p {
+font-size: 1.2rem;
+margin: 20px 0;
+line-height: 1.6;
+}
+
+.btn-primary {
+display: inline-block;
+padding: 12px 25px;
+background-color: #161d0a;
+color: white;
+text-decoration: none;
+border-radius: 10px;
+transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-primary:hover {
+background-color: #313e1e;
+transform: scale(1.05);
+}
+
+
+.mt-30 {
+margin-top: 30px;
+}
+
+
+.glimpse-container {
+display: flex;
+gap: 20px;
+margin-top: 40px;
+justify-content: center;
+}
+
+.glimpse-card {
+flex: 1;
+max-width: 400px;
+padding: 10px;
+border-radius: 8px;
+background-color: #161d0a;
+color: white;
+text-align: center;
+box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.glimpse-card video {
+width: 100%;
+border-radius: 5px;
+}
+
+.glimpse-card p {
+font-style: italic;
+margin-top: 10px;
+}
+</style>
+</head>
+<body>
+<nav class="navbar">
+<a href="index.html" class="nav-brand">My Digital Storybook</a>
+<ul class="nav-links">
+<li><a href="index.html" class="nav-link">The Portal</a></li>
+<li><a href="story.html" class="nav-link">The Tale</a></li>
+<li><a href="about.html" class="nav-link">Behind the Legend</a></li>
+<li><a href="profile.html" class="nav-link">Meet the Author</a></li>
+</ul>
+</nav>
+
+<header>
+<h1>Diwata</h1>
+<p>Enter the world of Philippine Mythology and Folklore</p>
+</header>
+
+<div class="page-container">
+<div class="card">
+<h2>The Legend of The Diwata: Maria Makiling</h2>
+<p>
+High above the sun-drenched plains of Laguna rises a mountain whose silhouette tells a story before a single word is spoken. To the wandering traveler, it is a majestic peak of emerald and mist; but to those who know the old ways, it is the profile of a woman in eternal slumber. This is Mount Makiling, the sacred domain of a diwata whose beauty is said to be as timeless as the stones themselves.<br><br>
+Maria Makiling is not merely a ghost of the woods; she is the living pulse of the forest, the personification of nature’s wild and untamed bounty. With skin the hue of sun-warmed earth and hair that cascades like a midnight waterfall, she stands as the mysterious bridge between the heavy, tangible world of mortals and the ethereal, shimmering realm of the spirits. To walk her paths is to step between two worlds, where every rustle of a leaf might be her footfall, and every shift in the fog might be the hem of her gown.<br><br>
+Are you ready to uncover her story?
+</p>
+<div class="mt-30">
+<a href="story.html" class="btn-primary">Enter the Tale</a>
+</div>
+</div>
+
+<div class="glimpse-container">
+<div class="glimpse-card">
+<h3>Watch the Teaser</h3>
+<video controls poster="images/video-poster.png">
+<source src="videos/diwata-teaser.mp4" type="video/mp4">
+
+</video>
+<p>"Step into the mystical world of Maria Makiling..."</p>
+</div>
+</div>
+</div>
+</body>
+</html>
+
+

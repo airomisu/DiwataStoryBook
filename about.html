@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Behind the Legend - My Digital Storybook</title>
+<link rel="stylesheet" href="style.css">
+<style>
+
+.page-container {
+padding: 40px 20px;
+}
+
+.page-container h1 {
+text-align: center;
+margin-bottom: 2rem;
+}
+
+
+.page-header {
+background-image: url('https://i.pinimg.com/736x/6f/68/2e/6f682e84a0e06cb68f5639535727e53d.jpg');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+color: #ecf0f1;
+padding: 6rem 2rem;
+text-align: center;
+border-radius: 10px;
+margin-bottom: 2rem;
+position: relative;
+overflow: hidden;
+}
+
+.page-header::before {
+content: "";
+position: absolute;
+top: 0; left: 0; right: 0; bottom: 0;
+background-color: rgba(0, 0, 0, 0.5); /* overlay for readability */
+border-radius: 10px;
+}
+
+.page-header h1,
+.page-header p {
+position: relative; /* appear above overlay */
+z-index: 1;
+margin: 0;
+}
+
+/* Cards */
+.card {
+background-color: #fdfbf7;
+border-radius: 20px;
+padding: 30px;
+margin-bottom: 30px;
+box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.card.origin {
+background-color: #161d0a;
+color: white;
+}
+
+.card.origin h2 {
+margin-bottom: 15px;
+}
+
+.flex-row {
+display: flex;
+gap: 20px;
+align-items: center;
+flex-wrap: wrap;
+}
+
+.flex-row div {
+flex: 1;
+}
+
+.flex-row img {
+width: 100%;
+}
+
+.card.reflection {
+background-color: #fdfbf7;
+border-left: 5px solid #161d0a;
+}
+
+.card.reflection p {
+font-size: 1.1rem;
+font-style: italic;
+color: #555;
+}
+
+.card.origin span {
+color: #e6b800;
+font-weight: bold;
+}
+
+.img-fluid {
+width: 100%;
+}
+</style>
+</head>
+<body>
+<nav class="navbar">
+<a href="index.html" class="nav-brand">My Digital Storybook</a>
+<ul class="nav-links">
+<li><a href="index.html" class="nav-link">The Portal</a></li>
+<li><a href="story.html" class="nav-link">The Tale</a></li>
+<li><a href="about.html" class="nav-link">Behind the Legend</a></li>
+<li><a href="profile.html" class="nav-link">Meet the Author</a></li>
+</ul>
+</nav>
+
+<div class="page-container">
+
+<div class="page-header">
+<h1>Behind the Legend</h1>
+<p>The Story and Origins of Maria Makiling</p>
+</div>
+
+<div class="card origin">
+<h2>Origin of the Myth</h2>
+<div class="flex-row">
+<div>
+<p>
+The legend of Maria Makiling is one of the most famous folktales in the Philippines. It originates from the province of Laguna, where Mount Makiling is located. The mountain's shape, which resembles a reclining woman, inspired the story of a guardian spirit.
+</p>
+<p>
+This myth has been passed down through generations, evolving over time. It serves as an explanation for the natural phenomena of the mountain, such as its abundance of resources, its unpredictable weather, and the mysterious disappearances of travelers. It is a classic example of animism in pre-colonial Filipino culture, where nature is believed to be inhabited by spirits.
+</p>
+</div>
+<div>
+<img src="https://lh4.googleusercontent.com/proxy/-UIWOgFu9gen_mPNspLBBDGDnqik68r2zyvWnY1R7fR6I8IlbSyND4DwquZWhYTQ8gckij1AJu4Z1yw8j-9s6yydsLnBL-L-fUctqiq6Cj4q3G0Q7emJaRtA" alt="Mount Makiling" class="img-fluid">
+</div>
+</div>
+</div>
+
+<div class="card reflection">
+<h2>My Personal Reflection</h2>
+<p>
+Creating this digital storybook made me realize how rich and beautiful Filipino mythology is.
+The story of Maria Makiling is not just a fairy tale; it teaches us about the importance of keeping our promises and respecting nature.
+I was particularly struck by how the environment reflects Maria's emotions, showing the deep connection between the land and the spirit.
+As a student, I feel proud to share this story because it is part of our identity.
+I hope that through this website, others will appreciate the magic of our local legends.
+We must preserve these stories for the future.
+</p>
+</div>
+</div>
+</body>
+</html>
