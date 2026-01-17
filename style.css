@@ -1,11 +1,10 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@400;700&display=swap');
 
 :root {
 --primary-color: #ffffff;
 --accent-color: #313e1e;
---text-color: #161d0a;
---bg-color: #161d0a;
+--text-color: #ffffff;
+--bg-color: #EDFFED;
 --nav-bg: #161d0a;
 --nav-text: #ffffff;
 }
@@ -129,5 +128,6 @@ align-items: center;
 gap: 20px;
 }
 }
+
 
 
