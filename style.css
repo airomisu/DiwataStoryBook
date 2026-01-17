@@ -4,8 +4,8 @@
 :root {
 --primary-color: #ffffff;
 --accent-color: #313e1e;
---text-color: #ffffff;
---bg-color: #EDFFED;
+--text-color: #161d0a;
+--bg-color: #161d0a;
 --nav-bg: #161d0a;
 --nav-text: #ffffff;
 }
@@ -129,7 +129,5 @@ align-items: center;
 gap: 20px;
 }
 }
-
-
 
 
